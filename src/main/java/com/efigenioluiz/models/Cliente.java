@@ -10,17 +10,15 @@ public class Cliente extends Usuario {
         super(email, nome);
     }
 
-    public void setCarrinho(Carrinho carrinho){
+    public void setCarrinho(Carrinho carrinho) {
         this.carrinho = carrinho;
     }
 
+    public Boolean adicionarProdutoCarrinho(Produto newProduto) {
+        if (newProduto == null)
+            return false;
 
-    // public Boolean adicionarProdutoCarrinho(Produto newProduto) {
-    //     if (newProduto == null)
-    //         return false;
-
-    //     this.carrinho.add(newProduto);
-    //     return true;
-    // }
+        return this.carrinho.getProdutos().add(newProduto);
+    }
 
 }

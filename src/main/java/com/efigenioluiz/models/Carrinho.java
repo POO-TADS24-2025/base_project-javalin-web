@@ -2,6 +2,7 @@ package com.efigenioluiz.models;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import com.efigenioluiz.models.*;
 
 public class Carrinho {
     private ArrayList<Produto> produtos;
@@ -9,6 +10,7 @@ public class Carrinho {
     private String descricao;
     private LocalDateTime criadoEm;
     private LocalDateTime finalizadoEm;
+    public Object getProdutos;
 
     public Carrinho(Double total, String descricao, LocalDateTime criadoEm, LocalDateTime finalizadoEm) {
         this.produtos = new ArrayList<>();
@@ -25,4 +27,7 @@ public class Carrinho {
         this.criadoEm = criadoEm;
     }
 
+    public ArrayList<Produto> getProdutos() {
+        return this.produtos;
+    }
 }

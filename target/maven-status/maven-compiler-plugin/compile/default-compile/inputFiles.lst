@@ -1,7 +1,10 @@
+/home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/abstracts/Pagamento.java
 /home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/Administrador.java
 /home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/Carrinho.java
+/home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/PagamentoBoleto.java
 /home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/Produto.java
 /home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/Cliente.java
+/home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/PagamentoCartao.java
 /home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/App.java
 /home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/models/Usuario.java
 /home/luiz/IdeaProjects/e-commerce/src/main/java/com/efigenioluiz/Utils/JavalinUtils.java
