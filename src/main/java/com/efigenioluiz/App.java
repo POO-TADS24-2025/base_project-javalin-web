@@ -1,6 +1,11 @@
 package com.efigenioluiz;
 
+import java.sql.Connection;
+import java.sql.ResultSet;
 import java.util.Map;
+
+import java.sql.PreparedStatement;
+import com.efigenioluiz.db.FabricaDeConexoes;
 
 import com.efigenioluiz.models.Produto;
 
@@ -11,6 +16,22 @@ import io.javalin.rendering.template.JavalinFreemarker;
 
 public class App {
     public static void main(String[] args) {
+
+        // String query = "SELECT * FROM produtos";
+        // try (
+        // Connection con = FabricaDeConexoes.getInstance().getConnection();
+        // PreparedStatement stmt = con.prepareStatement(query);
+        // ResultSet rs = stmt.executeQuery()
+        // ) {
+        // while (rs.next()) {
+        // System.out.println("ID: " + rs.getInt("id"));
+        // System.out.println("Nome: " + rs.getString("nome"));
+        // System.out.println("Preço: " + rs.getDouble("preco"));
+        // }
+        // } catch (Exception e) {
+        // e.printStackTrace();
+        // }
+
         System.out.println("Hello world!");
 
         Configuration cfg = new Configuration(Configuration.VERSION_2_3_34);
