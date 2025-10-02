@@ -3,7 +3,7 @@ package com.efigenioluiz;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.util.Map;
-
+import com.efigenioluiz.DAO.ProdutoDAOImpl;
 import java.sql.PreparedStatement;
 import com.efigenioluiz.db.FabricaDeConexoes;
 
@@ -31,6 +31,10 @@ public class App {
         // } catch (Exception e) {
         // e.printStackTrace();
         // }
+
+        ProdutoDAOImpl produtoDAO = new ProdutoDAOImpl();
+        Produto produto1 = new Produto("Teclado", 150.0);
+        produtoDAO.salvar(produto1);
 
         System.out.println("Hello world!");
 

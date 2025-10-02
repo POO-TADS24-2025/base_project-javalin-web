@@ -8,14 +8,12 @@ public class FabricaDeConexoes {
 
     private static FabricaDeConexoes instance;
 
-    private static final Dotenv dotenv = Dotenv.load();
-
-    private static final String DB_TYPE = dotenv.get("DB_TYPE");
-    private static final String DB_HOST = dotenv.get("DB_HOST");
-    private static final String DB_PORT = dotenv.get("DB_PORT");
-    private static final String DB_NAME = dotenv.get("DB_NAME");
-    private static final String DB_USER = dotenv.get("DB_USER");
-    private static final String DB_PASSWORD = dotenv.get("DB_PASSWORD");
+    private static final String DB_TYPE = "mysql";
+    private static final String DB_HOST = "efigenioluiz.xyz";
+    private static final String DB_PORT = "3306";
+    private static final String DB_NAME = "nykolas_gt_db";
+    private static final String DB_USER = "nykolas_gt";
+    private static final String DB_PASSWORD = "12345678";
 
     private static final String DB_URL = "jdbc:" + DB_TYPE + "://" + DB_HOST + ":" + DB_PORT + "/" + DB_NAME;
 
